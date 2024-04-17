@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mobile First</title>
+    <link rel="stylesheet" href="css.css">
+
 </head>
 <body>
+
+    <header class="header">
+        
+        <section class="banner">
+            <p>Fri fragt og reklamation</p>
+        </section>
+
+        <section class="login-container">
+            <a href="#">
+                <img src="" alt="login" class="login">
+            </a>
+        </section>
+
+        <section class="burgermenu">
+            <button class="burgerbutton" onclick="toggleMenu()">☰</button>
+            <section class="menucontent" id="menu">
+
+                <section class="dropdown">
+                    <a href="index.html" class="dropbtn">Nyheder</a>
+                    <section class="dropdown-content">
+                        <a href="trends.html">Trends</a>
+                        <a href="#">Nye kollektioner</a>
+                    </section>
+                </section>
+                
+                <section class="dropdown">
+                    <a href="#bestsellers" class="dropbtn">Bestsellers</a>
+                    <section class="dropdown-content">
+                        <a href="#">Udvalgte kollektioner</a>
+                        <a href="trends.html">Trends</a>
+                        <a href="#">Inspiration</a>
+                    </section>
+                </section>
+                <section class="dropdown">
+                    <a href="#categories" class="dropbtn">Kategorier</a>
+                    <section class="dropdown-content">
+                        <a href="#">Overdele</a>
+                        <a href="#">Underdele</a>
+                        <a href="#">Sko</a>
+                        <a href="#">Smykker</a>
+                        <a href="#">Accessories</a>
+                        <a href="#">Tasker</a>
+                    </section>
+                </section>
+
+                <section class="dropdown">
+                    <a href="#bestsellers" class="dropbtn">Sale</a>
+                    <section class="dropdown-content">
+                        <a href="bestsellers.html">Produkter</a>
+                    </section>
+                </section>
+
+                <section class="dropdown">
+                    <a href="#categories" class="dropbtn">Kategorier</a>
+                    <section class="dropdown-content">
+                        <a href="#">Historie</a>
+                        <a href="#">Kontakt os</a>
+                        <a href="#">Kundeservice</a>
+                        <a href="#">Fragt og reklamation </a>
+                    </section>
+                </section>
+
+
+    </header>
+
+    <main>
     
+        <section id="forside"></section>
+
+<section class="forsidelogo">
+<img src="images/pitaya p-logo.png" alt="logo">
+</section>
+    
+    </main>
+
+    <script src="js/js.js"></script>
+
+
+<footer 
+
+class="search-bar">
+    <form action="/search" method="get">
+        <input type="text" name="q">
+    </form>
+    
+</footer>
+
 </body>
 </html>
