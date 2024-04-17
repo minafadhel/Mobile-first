@@ -1,4 +1,6 @@
 
+
+
 :root {
     --contrast: rgb(0, 0, 0);
     --backgr: #ffffff00;
@@ -14,6 +16,12 @@ main {
     color: var(--contrast);
     background-color: var(--backgr);
     font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .header {
@@ -37,9 +45,10 @@ main {
 }
 
 .login {
-    width: 40px;  
+    width: 30px;  
     height: auto; 
 }
+
 
 .burgermenu {
     position: fixed;
@@ -109,26 +118,39 @@ main {
 #forside {
     height: 100vh;
     width: 100%;
-    background-image: url("images/forside.png");
+    background-image: url("images/forside-mobile.png"); /* Standard mobil baggrundsbillede */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     position: relative; 
 }
 
+/* Medieforespørgsel for større skærme som MacBook */
+@media (min-width: 768px) {
+    #forside {
+        background-image: url("images/forside-desktop.png"); /* Desktop baggrundsbillede */
+    }
+}
+
 .forsidelogo {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 250px; 
-    height: auto; 
-    z-index: 10; 
+    width: 250px;
+    height: auto;
+    z-index: 10;
 }
 
 .forsidelogo img {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .forsidelogo img {
+        content: url('images/logomedtekst.png');
+    }
 }
 
 .banner {
@@ -160,29 +182,39 @@ main {
 .search-bar {
     position: fixed;
     bottom: 0;
-    left: 0;
     width: 100%;
-    padding: 10px; 
+    padding: 4px;  
     z-index: 1001; 
+    display: flex;
+    justify-content: center;  
+    border: none;
+    outline: none;
 }
 
 .search-bar form {
     display: flex;
-    justify-content: center; 
+    align-items: center; 
+    width: 60%;  
+    max-width: 800px;
+    border: none;
 }
-.search-bar input[type="text"] {
-    width: 60%; 
-    padding: 6px; 
+
+.search-icon {
+    height: 24px; 
+    width: 24px;  
     margin-right: 5px; 
-    border: 2px solid #fff;
-    background: white;
-    color: rgb(0, 0, 0); 
-    border-radius: 4px; 
+    border: none;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    padding: 4px; 
+    color: rgb(0, 0, 0);
+    height: 24px;  
 }
 
 @media (max-width: 480px) { 
-    .search-bar input[type="text"] {
-        width: 80%; 
-        padding: 8px;
+    .search-bar form {
+        width: 90%; 
     }
 }
