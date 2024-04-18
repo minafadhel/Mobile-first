@@ -7,7 +7,7 @@
 main {
     color: var(--contrast);
     background-color: var(--backgr);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 p{
