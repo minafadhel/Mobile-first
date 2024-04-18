@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-
+/* Styler nav baren og header*/
 
 p{
     font-family: "Playfair Display", serif;
@@ -37,6 +37,7 @@ p{
     height: auto; 
 }
 
+/*giver burgermenuen css*/
 
 .burgermenu {
     position: fixed;
@@ -102,6 +103,8 @@ p{
     text-align: center;
 }
 
+/*Laver responsivt design til headeren*/
+
 @media (min-width: 768px) {
     #forside {
         background-image: url("images/forside-desktop.png"); /* Desktop baggrundsbillede */
@@ -140,6 +143,9 @@ p{
     100% { transform: translateX(-100%); }
 }
 
+
+/*Styler baggrunden og giver den farve*/
+
 main {
     color: var(--contrast);
     background-color: var(--backgr);
@@ -151,14 +157,18 @@ h1{
     padding-top: 90px;
 }
 
+
+/*Sætter mine billeder ind i en flexbox og designer den*/
+
 #sale1, #sale3, #sale5 {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    gap: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-top: 50px;
+    width: 100;
+    height: auto;
 
 }
 
@@ -166,12 +176,14 @@ h1{
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 50px;
+    width: 100;
+    height: auto;
 }
 
-
+/*laver responsivt design til billederne*/
 
 #sale1, #sale2, #sale3, #sale4, #sale5, #sale6 img{
 width: calc(33.33%-20px);
@@ -186,6 +198,7 @@ flex-grow: 1;
 }
 
 
+/*styler search-baren*/
 
 .search-bar {
     position: fixed;
@@ -222,6 +235,8 @@ flex-grow: 1;
     border:none;
     outline: none;
 }
+
+/*laver responsivt design til search-baren*/
 
 @media (max-width: 480px) { 
     .search-bar form {
