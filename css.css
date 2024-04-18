@@ -108,14 +108,14 @@ p{
 
 
 #forside {
-    height: 100vh;
+    height: 100vh;  
     width: 100%;
     background-image: url("images/forside-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
-    position: relative;
-}
+    background-position: center;
+    position: relative;  
+    }
 
 @media (min-width: 768px) {
     #forside {
@@ -147,6 +147,7 @@ p{
 .forsideunderbillede {
     width: 100%;
     display: block;
+    margin-top: 120vh;
 }
 
 .forsideunderbillede img {
@@ -224,6 +225,10 @@ p{
     .search-bar form {
         width: 90%; 
     }
+}
+
+.h1 { 
+
 }
 
 
