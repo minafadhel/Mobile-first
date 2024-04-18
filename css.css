@@ -36,10 +36,12 @@ p{
     justify-content: center;
 }
 
+
 .login {
     width: 30px;  
-    height: auto; 
+    height: auto;   
 }
+
 
 
 .burgermenu {
@@ -110,16 +112,17 @@ p{
 #forside {
     height: 100vh;  
     width: 100%;
-    background-image: url("images/forside-mobile.png");
+    background-image: url("images/forside..png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: right;
     position: relative;  
     }
 
 @media (min-width: 768px) {
     #forside {
-        background-image: url("images/forside-desktop.png"); /* Desktop baggrundsbillede */
+        background-image: url("images/forside..png"); 
+        background-position: top;
     }
 }
 
