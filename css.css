@@ -228,14 +228,14 @@ p{
 }
 
 .h1tekst h1 {
-    margin-top: 150%; /* Justér denne værdi for at øge eller formindske afstanden */
-    text-align: center; /* Sørger for at teksten er centreret */
-    font-size: 24px; /* Justér efter behov */
-    color: #000000; /* Definer en farve for teksten */
+    margin-top: 150%; 
+    text-align: center; 
+    font-size: 24px; 
+    color: #000000; 
 }
 
 @media (min-width: 768px) {
     .h1tekst h1 {
-        margin-top: 55%; /* Reducer margin på større skærme */
+        margin-top: 55%; 
     }
 }
