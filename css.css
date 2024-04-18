@@ -112,7 +112,7 @@ p{
 #forside {
     height: 100vh;  
     width: 100%;
-    background-image: url("images/forside..png");
+    background-image: url("images/forside...png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -121,7 +121,7 @@ p{
 
 @media (min-width: 768px) {
     #forside {
-        background-image: url("images/forside..png"); 
+        background-image: url("images/forside...png"); 
         background-position: top;
     }
 }
@@ -148,15 +148,14 @@ p{
 }
 
 .forsideunderbillede {
-    width: 100%;
-    display: block;
-    margin-top: 10vh;
-}
-
-.forsideunderbillede img {
-    width: 100%;
-    height: auto; 
-    display: block;
+margin-top: 8%;
+height: 100vh;  
+width: 100%;
+background-image: url("images/forsideunderbillede.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top;
+position: relative;  
 }
 
 
