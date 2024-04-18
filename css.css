@@ -230,6 +230,9 @@ position: relative;
 }
 
 .h1tekst h1 {
+    font-family: "oswald", sans-serif;
+font-weight: 400;
+font-style: normal;
     margin-top: 150%; 
     text-align: center; 
     font-size: 24px; 
