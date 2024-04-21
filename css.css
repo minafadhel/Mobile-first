@@ -244,3 +244,43 @@ font-style: normal;
         margin-top: 55%; 
     }
 }
+
+#historie-header {
+    font-family: "oswald", sans-serif;
+    text-align: center;
+}
+
+#historie-text {
+    text-align: center;
+    font-family: "oswald", sans-serif;
+}
+
+.image-container img {
+    position: absolute;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#historie-ida-img {
+    z-index: 0;
+    width: 500px;
+    height: 500px;
+}
+
+#historie-logo-img {
+    z-index: 1;
+    width: 700px;
+    height: 700px;
+    bottom: calc((500px / 2) + 100px);
+    left: calc((500px / 2));
+}
+
+.p{
+    text-align: center;
+}
