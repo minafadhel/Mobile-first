@@ -235,7 +235,12 @@ font-style: normal;
     margin-top: 150%; 
     text-align: center; 
     font-size: 24px; 
-    color: #000000; 
+    color: #000000;
+}
+
+.h1tekst a {
+    text-decoration: none; 
+    color: inherit; 
 }
 
 @media (min-width: 768px) {
@@ -244,84 +249,3 @@ font-style: normal;
     }
 }
 
-
-#historie-header {
-    font-family: "oswald", sans-serif;
-    text-align: center;
-}
-
-#historie-text {
-    text-align: center;
-    font-family: "oswald", sans-serif;
-}
-
-@media(min-width:480px) {
- 
-}
-
-
-
-
-#historie-billede{
-height: 100vh;  
-width: 100%;
-background-image: url("images/pida.png");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-position: relative;  
-}
-
-@media (min-width: 768px) {
-#historie-billede {
-    background-image: url("images/pida.png"); 
-    background-position: center;
-    background-size: contain;
-}
-}
-
-
-#bbb-billede{
-    height:100vh;  
-    width: 100%;
-    background-image: url("images/for2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative; 
-    max-width: 82%;
-    margin:auto;
-    
-    
- 
-    }
-    
-    @media (min-width: 768px) {
-    #bbb-billede {
-        background-image: url("images/for2.png"); 
-        background-position: center;
-        background-size: contain;
-    }
-    }
-
-.text-content{
-    text-align: center;
-    font-family: oswald;
-    color: #000000;
-
-font-family: Oswald;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%; 
-letter-spacing: -0.88px;
-text-align: center;
-}
-
-@media (min-width: 480px) {
-    .text-content {
-        margin-top: 5%; 
-        margin-bottom: 5%;
-       
-    }
-}
