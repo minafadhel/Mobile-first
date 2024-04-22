@@ -255,32 +255,48 @@ font-style: normal;
     font-family: "oswald", sans-serif;
 }
 
-.image-container img {
-    position: absolute;
+@media(min-width:480px) {
+ 
 }
 
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
+
+
+
+#forside{
+height: 100vh;  
+width: 100%;
+background-image: url("images/pida.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+position: relative;  
 }
 
-#historie-ida-img {
-    z-index: 0;
-    width: 500px;
-    height: 500px;
+@media (min-width: 768px) {
+#forside {
+    background-image: url("images/pip.png"); 
+    background-position: center;
+    background-size: contain;
+}
 }
 
-#historie-logo-img {
-    z-index: 1;
-    width: 700px;
-    height: 700px;
-    bottom: calc((500px / 2) + 100px);
-    left: calc((500px / 2));
-}
 
-.p{
+.text-content{
     text-align: center;
+    font-family: oswald;
+    color: #000000;
+
+font-family: Oswald;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 60px */
+letter-spacing: -0.88px;
+text-align: center;
 }
+
+@media (min-width: 480px) 
+    .text-content {
+        margin-top: 55%; 
+        margin-bottom: 55%;
+    }
