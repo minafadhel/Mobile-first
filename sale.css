@@ -103,6 +103,7 @@ p{
     text-align: center;
 }
 
+
 /*Laver responsivt design til headeren*/
 
 @media (min-width: 768px) {
@@ -201,49 +202,87 @@ height: auto;
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 4px;  
-    z-index: 1001; 
+    padding: 4px;
+    z-index: 1001;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    align-items: center;
     border: none;
     outline: none;
 }
 
-.search-bar form {
-    display: flex;
-    align-items: center; 
-    width: 60%;  
+.search-form {
+    display: none;  
+    align-items: center;
+    width: 60%;
     max-width: 800px;
     border: none;
 }
 
 .search-icon {
-    height: 24px; 
-    width: 24px;  
-    margin-right: 5px; 
+    height: 28px;
+    width: 28px;
+    margin-right: 5px;
     border: none;
 }
 
 .search-bar input[type="text"] {
     flex-grow: 1;
-    padding: 4px; 
+    padding: 4px;
     color: rgb(0, 0, 0);
-    height: 25px;  
-    border:none;
+    height: 25px;
+    border: none;
     outline: none;
 }
 
+/*logo på mobilskærme*/
+
+.mobile-logos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px; 
+    width: 100%;
+}
+
+.mobile-logos img {
+    height: 22px;  
+    width: auto;  
+}
+
+.logo2 {
+    transform: scale(3.0); 
+       height: auto;
+   }
+
 /*laver responsivt design til search-baren*/
 
-@media (max-width: 480px) { 
-    .search-bar form {
-        width: 90%; 
+@media (max-width: 768px) {
+    .search-form {
+        display: none; 
     }
-
-    .fuldbredde {
-        width: 100%;
-        display: flex;
+    .mobile-logos {
+        display: flex; 
+        justify-content: flex-end; 
+        width: 100%; 
     }
 }
+
+@media (min-width: 768px) {
+  
+    .search-form {
+        display: flex; 
+    }
+    .mobile-logos {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
 
 
