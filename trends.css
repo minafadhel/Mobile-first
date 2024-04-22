@@ -188,7 +188,7 @@ h1 {
     text-align: center;
     margin-top: 90px;
 }
-
+/* overskift til de forskælig treands*/
 .leopard {
     color: #520031;
     font-family: "oswald", sans-serif;
@@ -216,4 +216,33 @@ h1 {
     font-weight: 400;
     font-style: normal;
 }
+
+/*Billide layout*/
+.leopard-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+ }
+ .lavtaljet {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+ }
+ .red {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+ }
+ .blazer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+ }
+
+img {
+    width: 100%;
+    height: auto;
+    
+}
+
 

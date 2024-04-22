@@ -163,38 +163,35 @@ h1{
 #sale1, #sale3, #sale5 {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 50px;
-    width: 100;
-    height: auto;
+    gap: 5%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 6%;
 
 }
+
+ 
 
 #sale2, #sale4, #sale6 {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-    width: 100;
+    gap: 5%;
+    padding-top: 6%;
     height: auto;
+
 }
 
 /*laver responsivt design til billederne*/
 
-#sale1, #sale2, #sale3, #sale4, #sale5, #sale6 img{
-width: calc(33.33%-20px);
-height: auto;
-flex-grow: 1;
+#sale1 img, #sale3 img, #sale5 img {
+    width: 50%;
+    height: auto;
 }
 
-@media(max-width:768px) {
-    .sale img{
-        width: calc(50%-20px);
-    }
+#sale2 img, #sale4 img, #sale6 img{
+width: 33%;
+height: auto;
+
 }
 
 
@@ -241,6 +238,11 @@ flex-grow: 1;
 @media (max-width: 480px) { 
     .search-bar form {
         width: 90%; 
+    }
+
+    .fuldbredde {
+        width: 100%;
+        display: flex;
     }
 }
 
