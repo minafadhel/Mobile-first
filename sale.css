@@ -202,57 +202,6 @@ height: auto;
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 4px;  
-    z-index: 1001; 
-    display: flex;
-    justify-content: center;  
-    border: none;
-    outline: none;
-}
-
-.search-bar form {
-    display: flex;
-    align-items: center; 
-    width: 60%;  
-    max-width: 800px;
-    border: none;
-}
-
-.search-icon {
-    height: 24px; 
-    width: 24px;  
-    margin-right: 5px; 
-    border: none;
-}
-
-.search-bar input[type="text"] {
-    flex-grow: 1;
-    padding: 4px; 
-    color: rgb(0, 0, 0);
-    height: 25px;  
-    border:none;
-    outline: none;
-}
-
-/*laver responsivt design til search-baren*/
-
-@media (max-width: 480px) { 
-    .search-bar form {
-        width: 90%; 
-    }
-
-    .fuldbredde {
-        width: 100%;
-        display: flex;
-    }
-}
-
-/*footer*/
-
-.search-bar {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     padding: 4px;
     z-index: 1001;
     display: flex;
@@ -286,6 +235,8 @@ height: auto;
     outline: none;
 }
 
+/*logo på mobilskærme*/
+
 .mobile-logos {
     display: flex;
     align-items: center;
@@ -298,6 +249,13 @@ height: auto;
     height: 22px;  
     width: auto;  
 }
+
+.logo2 {
+    transform: scale(3.0); 
+       height: auto;
+   }
+
+/*laver responsivt design til search-baren*/
 
 @media (max-width: 768px) {
     .search-form {
@@ -320,7 +278,11 @@ height: auto;
     }
 }
 
-.logo2 {
- transform: scale(3.0); 
-    height: auto;
-}
+
+
+
+
+
+
+
+
