@@ -51,7 +51,6 @@ p{
     z-index: 1000;
 }
 
-
 .burgerbutton {
     background-color: #33333300;
     color: rgb(0, 0, 0);
@@ -187,47 +186,80 @@ position: relative;
 }
 
 
-
 .search-bar {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 4px;  
-    z-index: 1001; 
+    padding: 4px;
+    z-index: 1001;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    align-items: center;
     border: none;
     outline: none;
 }
 
-.search-bar form {
-    display: flex;
-    align-items: center; 
-    width: 60%;  
+.search-form {
+    display: none;  
+    align-items: center;
+    width: 60%;
     max-width: 800px;
     border: none;
 }
 
 .search-icon {
-    height: 24px; 
-    width: 24px;  
-    margin-right: 5px; 
+    height: 28px;
+    width: 28px;
+    margin-right: 5px;
     border: none;
 }
 
 .search-bar input[type="text"] {
     flex-grow: 1;
-    padding: 4px; 
+    padding: 4px;
     color: rgb(0, 0, 0);
-    height: 25px;  
-    border:none;
+    height: 25px;
+    border: none;
     outline: none;
 }
 
-@media (max-width: 480px) { 
-    .search-bar form {
-        width: 90%; 
+.mobile-logos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px; 
+    width: 100%;
+}
+
+.mobile-logos img {
+    height: 22px;  
+    width: auto;  
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        display: none; 
     }
+    .mobile-logos {
+        display: flex; 
+        justify-content: flex-end; 
+        width: 100%; 
+    }
+}
+
+@media (min-width: 768px) {
+  
+    .search-form {
+        display: flex; 
+    }
+    .mobile-logos {
+        display: none;
+    }
+}
+
+.logo2 {
+ transform: scale(3.0); 
+    height: auto;
 }
 
 .h1tekst h1 {
@@ -245,59 +277,3 @@ font-style: normal;
         margin-top: 55%; 
     }
 }
-
-#historie-header {
-    font-family: "oswald", sans-serif;
-    text-align: center;
-}
-
-#historie-text {
-    text-align: center;
-    font-family: "oswald", sans-serif;
-}
-
-@media(min-width:480px) {
- 
-}
-
-
-
-
-#forside{
-height: 100vh;  
-width: 100%;
-background-image: url("images/pida.png");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-position: relative;  
-}
-
-@media (min-width: 768px) {
-#forside {
-    background-image: url("images/pip.png"); 
-    background-position: center;
-    background-size: contain;
-}
-}
-
-
-.text-content{
-    text-align: center;
-    font-family: oswald;
-    color: #000000;
-
-font-family: Oswald;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%; /* 60px */
-letter-spacing: -0.88px;
-text-align: center;
-}
-
-@media (min-width: 480px) 
-    .text-content {
-        margin-top: 55%; 
-        margin-bottom: 55%;
-    }
