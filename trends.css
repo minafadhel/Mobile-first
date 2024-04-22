@@ -187,62 +187,86 @@ h1 {
     font-style: normal;
     text-align: center;
     margin-top: 90px;
+
 }
 /* overskift til de forskælig treands*/
-.leopard {
+.leopardo {
     color: #520031;
     font-family: "oswald", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-left: 10%;
 }
 
-.lavtaljet {
+.lavtaljeto {
     color: #520031;
     font-family: "oswald", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-left: 60%;
+   
 }
 
-.rødetråd {
+.rødetrådo {
     color: #520031;
     font-family: "oswald", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-left: 10%;
+    
 }
 
-.blazer {
+.blazero {
     color: #520031;
     font-family: "oswald", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-left: 60%;
 }
 
+@media screen and (min-width: 768px) {
+    .h1 {
+        font-size: 300%; /* Større størrelse for laptop-skjermer og større */
+    } 
+    .leopardo {
+        font-size: 300%; /* Større størrelse for laptop-skjermer og større */
+    } 
+    .lavtaljeto{
+        font-size: 300%; /* Større størrelse for laptop-skjermer og større */
+    } 
+    .rødetrådo{
+        font-size: 300%; /* Større størrelse for laptop-skjermer og større */
+    }
+    .blazero{
+        font-size: 300%; /* Større størrelse for laptop-skjermer og større */
+    } 
+}
 /*Billide layout*/
 .leopard-layout {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     gap: 10px;
+    justify-content: center;
  }
  .lavtaljet {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     gap: 10px;
  }
  .red {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     gap: 10px;
  }
  .blazer{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     gap: 10px;
  }
 
 img {
-    width: 100%;
+    width: 200%;
     height: auto;
-    
 }
 
 
