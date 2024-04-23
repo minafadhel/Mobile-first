@@ -1,3 +1,4 @@
+/* default for siden */
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +16,7 @@ p{
   font-style: normal;
 }
 
+/* header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -29,20 +31,21 @@ p{
     z-index: 1000; 
 }
 
-
 .login-container {
     display: flex;
     justify-content: center;
 }
 
+.login-container a {
+text-decoration: none;
+}
 
 .login {
     width: 30px;  
     height: auto;   
 }
 
-
-
+/* burgermenu */
 .burgermenu {
     position: fixed;
     top: 0;
@@ -59,6 +62,7 @@ p{
     font-size: 24px;
 }
 
+/* dropdown på burgermenu */
 .dropdown {
     position: relative;
     display: block;
@@ -88,7 +92,8 @@ p{
 .dropdown:hover .dropdown-content {
     display: block; }
 
-.menucontent {
+
+    .menucontent {
     display: none;
     background-color: #ffffff00;
     padding: 10px 0;
@@ -107,7 +112,7 @@ p{
     text-align: center;
 }
 
-
+/* forside baggrundsbillede */
 #forside {
     height: 100vh;  
     width: 100%;
@@ -125,6 +130,7 @@ p{
     }
 }
 
+/* logo på forside */
 .forsidelogo {
     position: absolute;
     top: 50%;
@@ -140,12 +146,14 @@ p{
     height: auto;
 }
 
+/* logo ændrer sig med skærmstørrelse */
 @media (min-width: 768px) {
     .forsidelogo img {
         content: url('images/logomedtekst.png');
     }
 }
 
+/* billede under forsidebilledet */
 .forsideunderbillede {
 margin-top: 9%;
 height: 100vh;  
@@ -157,7 +165,7 @@ background-position: top;
 position: relative;  
 }
 
-
+/* css på banner */
 .banner {
     overflow: hidden;
     position: fixed;
@@ -173,6 +181,7 @@ position: relative;
     z-index: 999;
 }
 
+/* rullende tekst på banner */
 .banner p {
     font-size: 11px; 
     white-space: nowrap;
@@ -184,7 +193,7 @@ position: relative;
     100% { transform: translateX(-100%); }
 }
 
-
+/* søgebar */
 .search-bar {
     position: fixed;
     bottom: 0;
@@ -205,6 +214,7 @@ position: relative;
     border: none;
 }
 
+/* søge logo */
 .search-icon {
     height: 24px; 
     width: 24px;  
@@ -212,6 +222,7 @@ position: relative;
     border: none;
 }
 
+/* søgebar input */
 .search-bar input[type="text"] {
     flex-grow: 1;
     padding: 4px; 
@@ -221,14 +232,9 @@ position: relative;
     outline: none;
 }
 
-@media (max-width: 480px) { 
-    .search-bar form {
-        width: 90%; 
-    }
-}
-
+/* css på h1 tekst */
 .h1tekst h1 {
-    font-family: "oswald", sans-serif;
+font-family: "oswald", sans-serif;
 font-weight: 400;
 font-style: normal;
     margin-top: 150%; 
@@ -247,4 +253,3 @@ font-style: normal;
         margin-top: 55%; 
     }
 }
-

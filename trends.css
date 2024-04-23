@@ -1,3 +1,4 @@
+/*komentar til dette står på siden css.css, gå til bunde for at få komentar til body*/
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +14,7 @@ main {
 
 p{
     font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
   font-style: normal;
 }
 
@@ -35,6 +37,11 @@ p{
     display: flex;
     justify-content: center;
 }
+
+.login-container a {
+    text-decoration: none;
+    }
+    
 
 .login {
     width: 30px;  
@@ -260,6 +267,8 @@ h1 {
     margin-left: 60%;
 }
 
+
+/*Dette er sådan skriften ændre størelse når man er på forskælige enhedder*/
 @media screen and (min-width: 768px) {
     .h1 {
         font-size: 300%; /* Større størrelse for laptop-skjermer og større */
