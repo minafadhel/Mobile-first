@@ -36,6 +36,10 @@ p{
     justify-content: center;
 }
 
+.login-container a {
+text-decoration: none;
+}
+
 .login {
     width: 30px;  
     height: auto;   
