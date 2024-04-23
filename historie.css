@@ -185,9 +185,10 @@ p{
     width: auto;  
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .search-form {
         display: none; 
+        visibility: hidden;
     }
     .mobile-logos {
         display: flex; 
@@ -210,7 +211,6 @@ p{
  transform: scale(3.0); 
     height: auto;
 }
-
 
 #historie-header {
     font-family: "oswald", sans-serif;
