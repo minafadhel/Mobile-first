@@ -213,96 +213,73 @@ p{
 
 
 
-/*Dette er main inholdet*/
-body {background-color:#FCFAFB ;}
-
-h1 {
-    color: #1E001B;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+#historie-header {
+    font-family: "oswald", sans-serif;
     text-align: center;
-    margin-top: 90px;
-
-}
-/* overskift til de forskælig treands*/
-.leopardo {
-    color: #520031;
-    font-family: "oswald", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-left: 10%;
 }
 
-.lavtaljeto {
-    color: #520031;
+#historie-text {
+    text-align: center;
     font-family: "oswald", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-left: 60%;
-   
 }
 
-.rødetrådo {
-    color: #520031;
-    font-family: "oswald", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-left: 10%;
+#historie-billede{
+height: 100vh;  
+width: 100%;
+background-image: url("images/pida.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+position: relative;  
+}
+
+@media (min-width: 768px) {
+#historie-billede {
+    background-image: url("images/pida.png"); 
+    background-position: center;
+    background-size: contain;
+}
+}
+
+#bbb-billede{
+    height:100vh;  
+    width: 100%;
+    background-image: url("images/for2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    max-width: 82%;
+    margin:auto;
     
-}
-
-.blazero {
-    color: #520031;
-    font-family: "oswald", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-left: 60%;
-}
-
-@media screen and (min-width: 768px) {
-    .h1 {
-        font-size: 300%; /* Større størrelse for laptop-skjermer og større */
-    } 
-    .leopardo {
-        font-size: 300%; /* Større størrelse for laptop-skjermer og større */
-    } 
-    .lavtaljeto{
-        font-size: 300%; /* Større størrelse for laptop-skjermer og større */
-    } 
-    .rødetrådo{
-        font-size: 300%; /* Større størrelse for laptop-skjermer og større */
+ 
     }
-    .blazero{
-        font-size: 300%; /* Større størrelse for laptop-skjermer og større */
-    } 
-}
-/*Billide layout*/
-.leopard-layout {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-    gap: 10px;
-    justify-content: center;
- }
- .lavtaljet {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-    gap: 10px;
- }
- .red {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-    gap: 10px;
- }
- .blazer{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-    gap: 10px;
- }
+    
+    @media (min-width: 768px) {
+    #bbb-billede {
+        background-image: url("images/for2.png"); 
+        background-position: center;
+        background-size: contain;
+    }
+    }
 
-img {
-    width: 200%;
-    height: auto;
+.text-content{
+    text-align: center;
+    font-family: oswald;
+    color: #000000;
+font-family: Oswald;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+letter-spacing: -0.88px;
+text-align: center;
 }
 
-
+@media (min-width: 480px) {
+    .text-content {
+        margin-top: 5%; 
+        margin-bottom: 5%;
+       
+    }
+}
