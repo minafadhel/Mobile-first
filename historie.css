@@ -218,8 +218,11 @@ p{
 }
 
 #historie-header {
-    font-family: "oswald", sans-serif;
+    color: var(--contrast);
+    background-color: var(--backgr);
+    font-family: 'Playfair Display', serif;
     text-align: center;
+    padding-top: 90px;
 }
 
 #historie-text {
@@ -269,7 +272,6 @@ position: relative;
 
 .text-content{
     text-align: center;
-    font-family: oswald;
     color: #000000;
 font-family: Oswald;
 font-size: 15px;
