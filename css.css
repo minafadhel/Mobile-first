@@ -177,13 +177,13 @@ position: relative;
     z-index: 999;
 }
 
+/* rullende tekst på banner */
 .banner p {
     font-size: 11px; 
     white-space: nowrap;
     animation: scrollText 10s linear infinite;
 }
 
-/* rullende tekst på banner */
 @keyframes scrollText {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
