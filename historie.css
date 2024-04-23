@@ -1,13 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
 }
 
 main {
     color: var(--contrast);
     background-color: var(--backgr);
-    font-family: 'Playfair', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 p{
@@ -35,10 +36,9 @@ p{
     justify-content: center;
 }
 
-
 .login {
     width: 30px;  
-    height: auto;   
+    height: auto; 
 }
 
 
@@ -108,56 +108,6 @@ p{
 }
 
 
-#forside {
-    height: 100vh;  
-    width: 100%;
-    background-image: url("images/forside...png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    position: relative;  
-    }
-
-@media (min-width: 768px) {
-    #forside {
-        background-image: url("images/forside...png"); 
-        background-position: center;
-    }
-}
-
-.forsidelogo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 250px;
-    height: auto;
-    z-index: 10;
-}
-
-.forsidelogo img {
-    width: 100%;
-    height: auto;
-}
-
-@media (min-width: 768px) {
-    .forsidelogo img {
-        content: url('images/logomedtekst.png');
-    }
-}
-
-.forsideunderbillede {
-margin-top: 9%;
-height: 100vh;  
-width: 100%;
-background-image: url("images/forsideunderbillede.png");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: top;
-position: relative;  
-}
-
-
 .banner {
     overflow: hidden;
     position: fixed;
@@ -189,69 +139,146 @@ position: relative;
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 4px;  
-    z-index: 1001; 
+    padding: 4px;
+    z-index: 1001;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    align-items: center;
     border: none;
     outline: none;
 }
 
-.search-bar form {
-    display: flex;
-    align-items: center; 
-    width: 60%;  
+.search-form {
+    display: none;  
+    align-items: center;
+    width: 60%;
     max-width: 800px;
     border: none;
 }
 
 .search-icon {
-    height: 24px; 
-    width: 24px;  
-    margin-right: 5px; 
+    height: 28px;
+    width: 28px;
+    margin-right: 5px;
     border: none;
 }
 
 .search-bar input[type="text"] {
     flex-grow: 1;
-    padding: 4px; 
+    padding: 4px;
     color: rgb(0, 0, 0);
-    height: 25px;  
-    border:none;
+    height: 25px;
+    border: none;
     outline: none;
 }
 
-@media (max-width: 480px) { 
-    .search-bar form {
-        width: 90%; 
+.mobile-logos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px; 
+    width: 100%;
+}
+
+.mobile-logos img {
+    height: 22px;  
+    width: auto;  
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        display: none; 
     }
-}
-
-.h1tekst h1 {
-    font-family: "oswald", sans-serif;
-font-weight: 400;
-font-style: normal;
-    margin-top: 150%; 
-    text-align: center; 
-    font-size: 24px; 
-    color: #000000;
-}
-
-.h1tekst a {
-    text-decoration: none; 
-    color: inherit; 
+    .mobile-logos {
+        display: flex; 
+        justify-content: flex-end; 
+        width: 100%; 
+    }
 }
 
 @media (min-width: 768px) {
-    .h1tekst h1 {
-        margin-top: 55%; 
+  
+    .search-form {
+        display: flex; 
+    }
+    .mobile-logos {
+        display: none;
     }
 }
 
+.logo2 {
+ transform: scale(3.0); 
+    height: auto;
+}
 
-   
-    footer{
-        background-color: black;
-        
+
+#historie-header {
+    font-family: "oswald", sans-serif;
+    text-align: center;
+}
+
+#historie-text {
+    text-align: center;
+    font-family: "oswald", sans-serif;
+}
+
+#historie-billede{
+height: 100vh;  
+width: 100%;
+background-image: url("images/pida.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+position: relative;  
+}
+
+@media (min-width: 768px) {
+#historie-billede {
+    background-image: url("images/pida.png"); 
+    background-position: center;
+    background-size: contain;
+}
+}
+
+#bbb-billede{
+    height:100vh;  
+    width: 100%;
+    background-image: url("images/for2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    max-width: 82%;
+    margin:auto;
+    
+ 
     }
     
+    @media (min-width: 768px) {
+    #bbb-billede {
+        background-image: url("images/for2.png"); 
+        background-position: center;
+        background-size: contain;
+    }
+    }
+
+.text-content{
+    text-align: center;
+    font-family: oswald;
+    color: #000000;
+font-family: Oswald;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+letter-spacing: -0.88px;
+text-align: center;
+}
+
+@media (min-width: 480px) {
+    .text-content {
+        margin-top: 5%; 
+        margin-bottom: 5%;
+       
+    }
+}

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
 }
 
@@ -12,7 +13,6 @@ main {
 
 p{
     font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
   font-style: normal;
 }
 
@@ -40,6 +40,7 @@ p{
     width: 30px;  
     height: auto; 
 }
+
 
 
 .burgermenu {
@@ -134,48 +135,83 @@ p{
 }
 
 
-
 .search-bar {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 4px;  
-    z-index: 1001; 
+    padding: 4px;
+    z-index: 1001;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    align-items: center;
     border: none;
     outline: none;
 }
 
-.search-bar form {
-    display: flex;
-    align-items: center; 
-    width: 60%;  
+.search-form {
+    display: none;  
+    align-items: center;
+    width: 60%;
     max-width: 800px;
     border: none;
 }
 
 .search-icon {
-    height: 24px; 
-    width: 24px;  
-    margin-right: 5px; 
+    height: 28px;
+    width: 28px;
+    margin-right: 5px;
     border: none;
 }
 
 .search-bar input[type="text"] {
     flex-grow: 1;
-    padding: 4px; 
+    padding: 4px;
     color: rgb(0, 0, 0);
-    height: 25px;  
-    border:none;
+    height: 25px;
+    border: none;
     outline: none;
 }
 
-@media (max-width: 480px) { 
-    .search-bar form {
-        width: 90%; 
+.mobile-logos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px; 
+    width: 100%;
+}
+
+.mobile-logos img {
+    height: 22px;  
+    width: auto;  
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        display: none; 
+    }
+    .mobile-logos {
+        display: flex; 
+        justify-content: flex-end; 
+        width: 100%; 
     }
 }
+
+@media (min-width: 768px) {
+  
+    .search-form {
+        display: flex; 
+    }
+    .mobile-logos {
+        display: none;
+    }
+}
+
+.logo2 {
+ transform: scale(3.0); 
+    height: auto;
+}
+
+
 
 /*Dette er main inholdet*/
 body {background-color:#FCFAFB ;}
@@ -187,62 +223,86 @@ h1 {
     font-style: normal;
     text-align: center;
     margin-top: 90px;
+
 }
 /* overskift til de forskælig treands*/
-.leopard {
+.leopardo {
     color: #520031;
     font-family: "oswald", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-left: 10%;
 }
 
-.lavtaljet {
+.lavtaljeto {
     color: #520031;
     font-family: "oswald", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-left: 60%;
+   
 }
 
-.rødetråd {
+.rødetrådo {
     color: #520031;
     font-family: "oswald", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-left: 10%;
+    
 }
 
-.blazer {
+.blazero {
     color: #520031;
     font-family: "oswald", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-left: 60%;
 }
 
+@media screen and (min-width: 768px) {
+    .h1 {
+        font-size: 300%; /* Større størrelse for laptop-skjermer og større */
+    } 
+    .leopardo {
+        font-size: 300%; /* Større størrelse for laptop-skjermer og større */
+    } 
+    .lavtaljeto{
+        font-size: 300%; /* Større størrelse for laptop-skjermer og større */
+    } 
+    .rødetrådo{
+        font-size: 300%; /* Større størrelse for laptop-skjermer og større */
+    }
+    .blazero{
+        font-size: 300%; /* Større størrelse for laptop-skjermer og større */
+    } 
+}
 /*Billide layout*/
 .leopard-layout {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     gap: 10px;
+    justify-content: center;
  }
  .lavtaljet {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     gap: 10px;
  }
  .red {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     gap: 10px;
  }
  .blazer{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     gap: 10px;
  }
 
 img {
-    width: 100%;
+    width: 200%;
     height: auto;
-    
 }
 
 
